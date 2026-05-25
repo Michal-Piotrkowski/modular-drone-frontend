@@ -1,0 +1,51 @@
+.sidebar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.sidebar-overlay > * {
+  pointer-events: auto;
+}
+
+.custom-map-icon {
+  background: none;
+  border: none;
+}
+
+.custom-map-icon .dot {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-map-icon .dot:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.6);
+}
+
+.custom-map-icon .dot.active {
+  background-color: #4ec152;
+  box-shadow: 0 0 12px 4px rgba(78, 193, 82, 0.8);
+  transform: scale(1.3);
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.custom-popup .leaflet-popup-tip {
+  background: white;
+}
